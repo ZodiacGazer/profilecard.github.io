@@ -57,7 +57,10 @@ class Output extends React.Component {
 		    this.state = {
 		      value: '',
 		      login: '',
-		      avatar: ''
+		      avatar: '',
+		      following: '',
+		      followers: '',
+		      name: ''
 		    }
 		  }
 		  handleSubmit(e){
@@ -103,7 +106,11 @@ class Output extends React.Component {
 		    .then((data) => {
 		      this.setState({
 		        login: data.login,
-		        avatar: data.avatar_url
+		        avatar: data.avatar_url,
+		        followers: data.followers,
+		        following: data.following,
+		        repos: data.public_repos,
+		        name: data.name
 		      })
 		    })
 		  }
@@ -114,7 +121,7 @@ class Output extends React.Component {
 		          <div className="cam"></div>
 		          <div className="speaker"></div>
 		          <div className="input__layout">
-		            <Input  data={this.props.data}
+		            <Input
 		                    value={this.state.value}
 		                    onHandleSubmit={this.handleSubmit}
 		                    onHandleChange={this.handleChange}/>
