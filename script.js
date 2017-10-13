@@ -1,4 +1,4 @@
-class Output extends React.Component {
+		class Output extends React.Component {
 		  render(){
 		    return(
 		      <div className="card">
