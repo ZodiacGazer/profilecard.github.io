@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #263238;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+}
+
+.phone {
+  border-radius: 70px;
+  position: absolute;
+  top:50px;right:0;bottom:0;left:0;
+  margin: auto;
+  width: 300px;
+  height: 600px;
+  background: #212121;
+}
+
+.cam {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #434343;
+  top: 38px;
+  left: 100px;
+}
+
+.cam:after{
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #646464;
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  margin:auto;
+}
+
+.speaker {
+  width: 60px;
+  height: 6px;
+  background: #434343;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;right:0;bottom:0;left:0;
+  margin: 0 auto;
+}
+
+.input__layout {
+  position: relative;
+  margin-top: 65px;
+  background: #607D8B;
+  width: 300px;
+  height: 100px;
+}
+
+.form__input {
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+  margin:0;
+  position: absolute;
+  width: 0px;
+  right: 15px;
+  top: 24px;
+  transition: all, .5s;
+  background: transparent;
+}
+
+.glyphicon-search {
+  position: absolute;
+  right: 10px;
+  top: 26px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-active {
+  width: 200px;
+  background: #F5F5F5;
+  right: 40px;
+}
+
+.card {
+  background: #f5f5f5;
+}
+.card__image {
+  margin-top: -40px;
+  position: relative;
+  text-align: center;
+}
+
+.image {
+  max-width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.small__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login, .name {
+  padding: 20px;
+  text-align: center;
+}
+.repos,
+.followers,
+.following {
+  padding: 10px;
+  text-align: center;
+}
+.repos {
+  background: #55AEEF;
+}
+
+.followers {
+  background: #EB4D8A;
+}
+.following {
+  background: #0CE371;
+}
+
+.glyphicon-briefcase,
+.glyphicon-user,
+.glyphicon-headphones{
+  padding: 0 10px;
+ font-size: 22px; 
+ color: #fff;
+}
+
+.number {
+  font-size: 18px;
+  font-weight: bold;
+}
